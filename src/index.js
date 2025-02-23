@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import dbConnect from "./config/dbConnection.js";
 import authRoutes from "./routes/authRoutes.js";
+import "./config/passportConfig.js";
 
 dotenv.config();
 const app = express();

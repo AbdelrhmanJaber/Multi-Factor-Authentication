@@ -13,7 +13,7 @@ import {
 const router = Router();
 
 router.route("/register").post(register);
-router.route("/login").post(login);
+router.route("/login").post(passport.authenticate("local"), login);
 router.route("/status").get(getStatus);
 router.route("/logout").post(logout);
 router.route("/setup").post(setup);
